@@ -1,6 +1,6 @@
-var app = angular.module('main', ['ngCookies']);
+var app = angular.module('main', []);
 
-app.controller('productController', ['$scope', '$http', '$cookies', function ($scope, $http, $cookies) {
+app.controller('productController', ['$scope', '$http', function ($scope, $http) {
 
     $scope.items = [
                   {name: "Docker Classic Blue", src: "images\\catalog\\hats\\Hat_Blue1.jpg;images\\catalog\\hats\\Hat_Blue2.jpg;", description: "100%", price: 200},

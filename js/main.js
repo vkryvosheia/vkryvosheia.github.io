@@ -282,6 +282,4 @@
         $('.js-modal1').removeClass('show-modal1');
     });
 
-
-
 })(jQuery);

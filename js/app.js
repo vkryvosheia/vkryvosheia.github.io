@@ -1,6 +1,6 @@
-var main = angular.module('main', ['ngCookies']);
+var main = angular.module('main', []);
 
-main.controller('mainController', ['$scope', '$http', '$cookies', function ($scope, $http, $cookies) {
+main.controller('mainController', ['$scope', '$http', function ($scope, $http) {
 
     $scope.getItemSrc = function(src){
         return src.split(';')[0];
