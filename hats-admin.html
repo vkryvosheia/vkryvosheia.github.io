@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.png"/>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/linearicons-v1.0.0/icon-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/MagnificPopup/magnific-popup.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/admin.js"></script>
+    <!--===============================================================================================-->
+</head>
+<body ng-app="main" ng-controller="adminController">
+<form class="col-sm-6" style="margin: 10% auto; vertical-align: middle">
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" ng-model="name">
+    </div>
+    <div class="form-group">
+        <label for="price">Price</label>
+        <input type="number" class="form-control" id="price" ng-model="price">
+    </div>
+
+     <!--<div class="form-group">-->
+        <!--<label for="amount">Amount</label>-->
+        <!--<input type="number" class="form-control" id="amount" ng-model="amount">-->
+    <!--</div>-->
+
+    <div class="form-group">
+        <label for="description">Description</label>
+        <textarea id="description" maxlength="512" rows="5" class="form-control" ng-model="description"></textarea>
+    </div>
+
+    <!--<div class="form-group">-->
+        <!--<label for="category">Category</label>-->
+        <!--<select id="category" class="form-control" ng-options="category as category.name for category in categories" ng-model="category"></select>-->
+    <!--</div>-->
+
+    <!--<div class="filter-col3 p-r-15 p-b-27">-->
+        <!--<div class="mtext-102 cl2 p-b-15">-->
+            <!--Color-->
+        <!--</div>-->
+
+        <!--<ul>-->
+            <!--<li class="p-b-6" ng-click="activateColor(color)" ng-repeat="color in colors">-->
+                <!--<span class="fs-15 lh-12 m-r-6" ng-style="getColor(color)">-->
+                    <!--<i class="zmdi zmdi-circle"></i>-->
+                <!--</span>-->
+
+                <!--<a class="filter-link stext-106 trans-04" style="cursor: pointer">-->
+                    <!--{{color.name}}-->
+                <!--</a>-->
+            <!--</li>-->
+
+        <!--</ul>-->
+    <!--</div>-->
+
+
+    <input type="file" id="input" multiple>
+
+    <button type="submit" ng-click="upload()" class="btn btn-primary">Submit</button>
+</form>
+</body>
+</html>
