@@ -10,7 +10,6 @@ main.controller('mainController', ['$scope', '$http', function ($scope, $http) {
         $http.get('/items/' + itemId).then(function (data) {
             $scope.item = data.data;
             $scope.itemPhotos = $scope.item.src.split(';');
-            console.log($scope.itemPhotos);
             $('.js-modal1').addClass('show-modal1');
         });
     };
